@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetworkManager.h"
+#import "Utility.h"
+
 
 @interface ViewController : UIViewController
+
+
+
+- (IBAction)buttonActionHitAPIPostMethod:(id)sender;
+
+- (IBAction)buttonActionHitAPIGetMethod:(id)sender;
 
 
 @end

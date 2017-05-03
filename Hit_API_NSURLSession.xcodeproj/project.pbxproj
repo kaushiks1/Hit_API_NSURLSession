@@ -16,6 +16,10 @@
 		44EDDB531D49EE8400A82E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDDB511D49EE8400A82E5F /* LaunchScreen.storyboard */; };
 		44EDDB5E1D49EE8400A82E5F /* Hit_API_NSURLSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB5D1D49EE8400A82E5F /* Hit_API_NSURLSessionTests.m */; };
 		44EDDB691D49EE8400A82E5F /* Hit_API_NSURLSessionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB681D49EE8400A82E5F /* Hit_API_NSURLSessionUITests.m */; };
+		44EDDB781D4A1ED900A82E5F /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB771D4A1ED900A82E5F /* NetworkManager.m */; };
+		44EDDB7B1D4A221800A82E5F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB7A1D4A221800A82E5F /* Reachability.m */; };
+		44EDDB7F1D4A2C4B00A82E5F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB7E1D4A2C4B00A82E5F /* Utility.m */; };
+		44EDDB821D4A3B9800A82E5F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDDB811D4A3B9800A82E5F /* Constant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		44EDDB641D49EE8400A82E5F /* Hit_API_NSURLSessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hit_API_NSURLSessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EDDB681D49EE8400A82E5F /* Hit_API_NSURLSessionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hit_API_NSURLSessionUITests.m; sourceTree = "<group>"; };
 		44EDDB6A1D49EE8400A82E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44EDDB761D4A1ED900A82E5F /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		44EDDB771D4A1ED900A82E5F /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		44EDDB791D4A221800A82E5F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		44EDDB7A1D4A221800A82E5F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		44EDDB7D1D4A2C4B00A82E5F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		44EDDB7E1D4A2C4B00A82E5F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		44EDDB801D4A3B9800A82E5F /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		44EDDB811D4A3B9800A82E5F /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,13 @@
 				44EDDB441D49EE8400A82E5F /* AppDelegate.m */,
 				44EDDB461D49EE8400A82E5F /* ViewController.h */,
 				44EDDB471D49EE8400A82E5F /* ViewController.m */,
+				44EDDB761D4A1ED900A82E5F /* NetworkManager.h */,
+				44EDDB771D4A1ED900A82E5F /* NetworkManager.m */,
+				44EDDB7D1D4A2C4B00A82E5F /* Utility.h */,
+				44EDDB7E1D4A2C4B00A82E5F /* Utility.m */,
+				44EDDB801D4A3B9800A82E5F /* Constant.h */,
+				44EDDB811D4A3B9800A82E5F /* Constant.m */,
+				44EDDB7C1D4A28E200A82E5F /* Library */,
 				44EDDB491D49EE8400A82E5F /* Main.storyboard */,
 				44EDDB4F1D49EE8400A82E5F /* Assets.xcassets */,
 				44EDDB511D49EE8400A82E5F /* LaunchScreen.storyboard */,
@@ -141,6 +160,15 @@
 				44EDDB6A1D49EE8400A82E5F /* Info.plist */,
 			);
 			path = Hit_API_NSURLSessionUITests;
+			sourceTree = "<group>";
+		};
+		44EDDB7C1D4A28E200A82E5F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				44EDDB791D4A221800A82E5F /* Reachability.h */,
+				44EDDB7A1D4A221800A82E5F /* Reachability.m */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +305,10 @@
 				44EDDB451D49EE8400A82E5F /* AppDelegate.m in Sources */,
 				44EDDB4E1D49EE8400A82E5F /* Hit_API_NSURLSession.xcdatamodeld in Sources */,
 				44EDDB421D49EE8400A82E5F /* main.m in Sources */,
+				44EDDB7F1D4A2C4B00A82E5F /* Utility.m in Sources */,
+				44EDDB7B1D4A221800A82E5F /* Reachability.m in Sources */,
+				44EDDB781D4A1ED900A82E5F /* NetworkManager.m in Sources */,
+				44EDDB821D4A3B9800A82E5F /* Constant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
